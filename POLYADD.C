@@ -70,4 +70,18 @@ void polyAdd(Node *poly1,Node *poly2,Node *res){
 		r->link=p2;}
 }
 void main(){
-	Node
+	Node *poly1=getnode(0,0);
+	Node *poly2=getnode(0,0);
+	Node *res=getnode(0,0);
+	clrscr();
+	creatpoly(poly1);
+	creatpoly(poly2);
+	polyAdd(poly1,poly2,res);
+	printf("( ");
+	print(poly1);
+	printf(" )+( ");
+	print(poly2);
+	printf(" )= ");
+	print(res);
+	getch();
+}
