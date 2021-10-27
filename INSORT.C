@@ -10,7 +10,7 @@ void main()
 	scanf("%d",&n);
 	if(n<=0)
 	{
-		printf("\n\n!!!!!!!!!!Invalid limit!!!!!!!!!!!!");
+		printf("\n\nInvalid limit");
 		getch();
 		exit();
 	}
@@ -28,7 +28,7 @@ void main()
 			j--;
 		}
 	}
-	printf("Sorted list: ");
+	printf("The sorted list is: ");
 	for(i=0;i<n;i++)
 		printf(" %d",a[i]);
 	getch();
