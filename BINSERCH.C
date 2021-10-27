@@ -4,9 +4,9 @@
        {
 		int a[10],ser,n,i,j,mid,lb,ub;
 		clrscr();
-		printf("entre the size of array: ");
+		printf("Enter the size of array: ");
 		scanf("%d",&n);
-		printf("enter the array: ");
+		printf("Enter the array: ");
 		for(i=0;i<n;i++)
 			scanf("%d",&a[i]);
 
@@ -18,7 +18,7 @@
 					a[j]=a[j+1];
 					a[j+1]=temp;
 				}
-		printf("Enter the element to search: ");
+		printf("Enter the element to be searched: ");
 		scanf("%d",&ser);
 		lb=0;
 		ub=n-1;
@@ -26,7 +26,7 @@
 		{       mid=(lb+ub)/2;
 			if(ser==a[mid])
 			{
-				printf("%d found at index %d",ser,mid+1);
+				printf("%d Element found at index %d",ser,mid+1);
 				break;
 			}
 			else if(ser>a[mid])
