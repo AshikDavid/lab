@@ -2,7 +2,7 @@
 #include<conio.h>
 void main()
 {
-	int  a[10],n,i,j;
+	int a[10],n,i,j;
 	clrscr();
 	printf("Enter the size: ");
 	scanf("%d",&n);
