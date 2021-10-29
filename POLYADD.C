@@ -18,8 +18,7 @@ void print(Node *polyhead){
 	Node *poly=polyhead->link;
 	if(poly!=NULL){
 		printf("%dx^%d",poly->coeff,poly->expo);
-		poly=poly->link;
-	}
+		poly=poly->link;}
 	while(poly!=NULL){
 		printf(" + %dx^%d",poly->coeff,poly->expo);
 		poly=poly->link;
@@ -29,7 +28,7 @@ void creatpoly(Node *header){
 	Node *node=header;
 	Node *new;
 	int deg,coeff,expo,i;
-	printf("Enter the max deg of the polynomial: ");
+	printf("Enter the max degree of the polynomial: ");
 	scanf("%d",&deg);
 	for(i=deg;i>=0;i--){
 		printf("Enter the coeff of x^%d: ",i);
